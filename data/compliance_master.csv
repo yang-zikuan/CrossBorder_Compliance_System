@@ -1,0 +1,5 @@
+hs_code,product_cat,tax_rebate,reg_condition,insp_condition,min_density,max_density
+8517130000,Smartphones,0.13,A,L,200,450
+8471309000,Laptops,0.13,A,L,150,350
+8507600099,Li-ion Batteries,0.06,A,"M,L",800,1500
+8518300000,Headphones,0.13,None,None,100,250
