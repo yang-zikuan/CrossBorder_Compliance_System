@@ -1,11 +1,12 @@
  # Cross-Border Trade Compliance & Routing System
 
- ## Main purpose ：This project is mainly aimed at developing an automated verification system for the pain points in the supply chain of businesses (simulating real cross-department data interaction, malicious underreporting and tax evasion, incorrect declaration of risks, and customs declaration errors). The system integrates multiple departments' documents, performs different anomaly detection, and forwards the problematic documents to the corresponding departments, ensuring business compliance.
+ ## Main purpose ：
+   This project is mainly aimed at developing an automated verification system for the pain points in the supply chain of businesses (simulating real cross-department data interaction, malicious underreporting and tax evasion, incorrect declaration of risks, and customs declaration errors). The system integrates multiple departments' documents, performs different anomaly detection, and forwards the problematic documents to the corresponding departments, ensuring business compliance.
 
  ## Step1:Data Sourcing & ETL Setup
-    Business implementation: Since a perfect dataset was not available, we first consulted the actual local customs database, extracted the actual customs extraction codes (10-digit HS codes), and obtained the refund rates and regulatory conditions as the actual data source.
+   Business implementation: Since a perfect dataset was not available, we first consulted the actual local customs database, extracted the actual customs extraction codes (10-digit HS codes), and obtained the refund rates and regulatory conditions as the actual data source.
 
-    Pain point simulation: To closely replicate the "data silos" and human errors found in real business scenarios, I wrote a script to generate daily financial invoices and logistics packing lists, and injected real dirty data such as "maliciously underreporting the value of goods, incorrect HS codes, and瞒报 of dangerous goods" into them according to certain probabilities.
+   ain point simulation: To closely replicate the "data silos" and human errors found in real business scenarios, I wrote a script to generate daily financial invoices and logistics packing lists, and injected real dirty data such as "maliciously underreporting the value of goods, incorrect HS codes, and瞒报 of dangerous goods" into them according to certain probabilities.
 
 ## Step2:Data Integration & Pipeline
    Cleaning: Write a Pandas data fusion script to build a lightweight ETL pipeline, and perform defensive cleaning on the text fields that are prone to errors by business personnel (such as removing invisible spaces)
